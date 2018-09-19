@@ -1,21 +1,13 @@
-var express = require("express"),
-    app = express(),
-    bodyParser  = require("body-parser"),
-    methodOverride = require("method-override");
-    mongoose = require('mongoose');
+const express = require('express');
+const bodyParser = require('body-parser');
 
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
-app.use(methodOverride());
+const residente = require('./routes/residente.route');
+const app = express();
 
-var router = express.Router();
+app.use('/residentes',residente)
 
-router.get('/', function(req, res) {
-   res.send("Hello World!");
-});
+let port = 3000;
 
-app.use(router);
-
-app.listen(3000, function() {
-  console.log("Node server running on http://localhost:3000");
+app.listen(port, () => {
+    console.log('Server is up and running on port numner ' + port);
 });
