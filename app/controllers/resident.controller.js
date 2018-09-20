@@ -12,7 +12,13 @@ exports.create = (req, res) => {
     // Create a Resident
     const resident = new Resident({
         name: req.body.name,
-        age: req.body.age || 99
+        birth_date: new Date(req.body.birth_date) || Date.now,
+        admission_date: new Date(req.body.admission_date) || Date.now,
+        gender: req.body.gender,
+        state: req.body.state,
+        contact_name: req.body.contact_name,
+        contact_phone: req.body.contact_phone,
+        diseases: req.body.diseases
     });
 
     // Save Resident in the database
@@ -63,16 +69,17 @@ exports.findOne = (req, res) => {
 // Update a resident identified by the residentId in the request
 exports.update = (req, res) => {
     // Validate Request
-    if(!req.body.name) {
-        return res.status(400).send({
-            message: "Resident content can not be empty"
-        });
-    }
 
     // Find resident and update it with the request body
     Resident.findByIdAndUpdate(req.params.residentId, {
-        title: req.body.title || "Untitled Resident",
-        content: req.body.content
+        name: req.body.name,
+        birth_date: new Date(req.body.birth_date) || Date.now,
+        admission_date: new Date(req.body.admission_date) || Date.now,
+        gender: req.body.gender,
+        state: req.body.state,
+        contact_name: req.body.contact_name,
+        contact_phone: req.body.contact_phone,
+        diseases: req.body.diseases
     }, {new: true})
     .then(resident => {
         if(!resident) {
