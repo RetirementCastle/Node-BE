@@ -1,5 +1,12 @@
 version: "2"
 services:
+  mongo:
+    container_name: mongo
+    image: mongo
+    volumes:
+      - ./data:/data/db
+    ports:
+      - "27017:27017"
   app:
     container_name: retirementcastle_node-be
     restart: always
@@ -8,10 +15,3 @@ services:
       - "3000:3000"
     links:
       - mongo
-  mongo:
-    container_name: mongo
-    image: mongo
-    volumes:
-      - ./data:/data/db
-    ports:
-      - "27017:27017"
