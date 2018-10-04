@@ -29,7 +29,9 @@ paths:
             $ref: '#/definitions/ResidentInput'
       responses:
         '201':
-          description: Created
+          description: Ok
+          schema:
+            $ref: '#/definitions/Resident'
         '400':
           description: Bad Request
           schema:
@@ -87,9 +89,9 @@ paths:
       summary: Updates a resident with the given id
       operationId: updateResident
       parameters:
-        - name: code
+        - name: id
           in: path
-          description: The code of the resident to be updated
+          description: The id of the resident to be updated
           required: true
           type: integer
         - name: resident
@@ -145,13 +147,13 @@ definitions:
     type: object
     properties:
       id:
-	type: integer
+        type: integer
       name:
         type: string
       birth_date:
-        type: date
+        type: string
       admission_date:
-        type: date
+        type: string
       gender:
         type: string
       state:
@@ -179,9 +181,9 @@ definitions:
       name:
         type: string
       birth_date:
-        type: date
+        type: string
       admission_date:
-        type: date
+        type: string
       gender:
         type: string
       state:
@@ -201,3 +203,4 @@ definitions:
     properties:
       message:
         type: string
+        
