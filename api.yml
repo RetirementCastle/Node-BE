@@ -1,0 +1,203 @@
+#Test with: http://editor.swagger.io/
+
+swagger: '2.0'
+info:
+  version: 1.0.0
+  title: Retirement castle [Residents]
+  description: NodeJS + Mongo
+  license:
+    name: Software Architecture 2018-II
+host: localhost:3000
+basePath: /residents
+schemes:
+  - http
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /residents:
+    post:
+      summary: Enters a new resident
+      operationId: newResident
+      parameters:
+        - name: resident
+          in: body
+          required: true
+          description: Resident Object
+          schema:
+            $ref: '#/definitions/ResidentInput'
+      responses:
+        '201':
+          description: Created
+        '400':
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/ErrorModel'
+        '500':
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/ErrorModel'
+    get:
+      summary: Returns all residents
+      operationId: getAllResidents
+      responses:
+        '200':
+          description: Ok
+          schema:
+            $ref: '#/definitions/ResidentsList'
+        '406':
+          description: Not Acceptable (Invalid Params)
+          schema:
+            $ref: '#/definitions/ErrorModel'
+        '500':
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/ErrorModel'
+
+  /residents/{id}:
+    get:
+      summary: Returns a resident with the given id
+      operationId: getResidentById
+      parameters:
+        - name: id
+          in: path
+          description: The id of the resident to be returned
+          required: true
+          type: integer
+      responses:
+        '200':
+          description: Ok
+          schema:
+            $ref: '#/definitions/Resident'
+        '404':
+          description: Not Found
+          schema:
+            $ref: '#/definitions/ErrorModel'
+        '406':
+            description: Not Acceptable (Invalid Params)
+            schema:
+              $ref: '#/definitions/ErrorModel'
+        '500':
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/ErrorModel'
+
+    put:
+      summary: Updates a resident with the given id
+      operationId: updateResident
+      parameters:
+        - name: code
+          in: path
+          description: The code of the resident to be updated
+          required: true
+          type: integer
+        - name: resident
+          in: body
+          required: true
+          description: Resident Object
+          schema:
+            $ref: '#/definitions/ResidentInput'
+      responses:
+        '204':
+          description: No Content
+        '404':
+          description: Not Found
+          schema:
+            $ref: '#/definitions/ErrorModel'
+        '406':
+            description: Not Acceptable (Invalid Params)
+            schema:
+              $ref: '#/definitions/ErrorModel'
+        '500':
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/ErrorModel'
+
+    delete:
+      summary: Deletes a resident with the given id
+      operationId: deleteResident
+      parameters:
+        - name: id
+          in: path
+          description: The id of the resident to be deleted
+          required: true
+          type: integer
+      responses:
+        '200':
+          description: Ok
+        '404':
+          description: Not Found
+          schema:
+            $ref: '#/definitions/ErrorModel'
+        '406':
+            description: Not Acceptable (Invalid Params)
+            schema:
+              $ref: '#/definitions/ErrorModel'
+        '500':
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/ErrorModel'
+
+definitions:
+
+  Resident:
+    type: object
+    properties:
+      id:
+	type: integer
+      name:
+        type: string
+      birth_date:
+        type: date
+      admission_date:
+        type: date
+      gender:
+        type: string
+      state:
+        type: string
+      contact_name:
+        type: string
+      contact_phone:
+        type: string
+      diseases:
+        type: string
+
+  ResidentsList:
+    type: object
+    required:
+      - total
+    properties:
+      list:
+        type: array
+        items:
+          $ref: '#/definitions/Resident'
+
+  ResidentInput:
+    type: object
+    properties:
+      name:
+        type: string
+      birth_date:
+        type: date
+      admission_date:
+        type: date
+      gender:
+        type: string
+      state:
+        type: string
+      contact_name:
+        type: string
+      contact_phone:
+        type: string
+      diseases:
+        type: string
+
+# Errors
+  ErrorModel:
+    type: object
+    required:
+      - message
+    properties:
+      message:
+        type: string
