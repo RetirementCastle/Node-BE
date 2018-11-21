@@ -1,0 +1,445 @@
+mongo is up-to-date
+retirementcastle_node-be is up-to-date
+Attaching to mongo, retirementcastle_node-be
+[36mmongo    |[0m 2018-11-01T18:09:24.777+0000 I CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+[36mmongo    |[0m 2018-11-01T18:09:24.844+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/data/db 64-bit host=99f7268e1472
+[36mmongo    |[0m 2018-11-01T18:09:24.844+0000 I CONTROL  [initandlisten] db version v4.0.3
+[36mmongo    |[0m 2018-11-01T18:09:24.844+0000 I CONTROL  [initandlisten] git version: 7ea530946fa7880364d88c8d8b6026bbc9ffa48c
+[36mmongo    |[0m 2018-11-01T18:09:24.844+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+[36mmongo    |[0m 2018-11-01T18:09:24.844+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+[36mmongo    |[0m 2018-11-01T18:09:24.844+0000 I CONTROL  [initandlisten] modules: none
+[36mmongo    |[0m 2018-11-01T18:09:24.844+0000 I CONTROL  [initandlisten] build environment:
+[36mmongo    |[0m 2018-11-01T18:09:24.844+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
+[36mmongo    |[0m 2018-11-01T18:09:24.844+0000 I CONTROL  [initandlisten]     distarch: x86_64
+[36mmongo    |[0m 2018-11-01T18:09:24.844+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+[36mmongo    |[0m 2018-11-01T18:09:24.844+0000 I CONTROL  [initandlisten] options: { net: { bindIpAll: true } }
+[36mmongo    |[0m 2018-11-01T18:09:24.850+0000 I STORAGE  [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+[36mmongo    |[0m 2018-11-01T18:09:24.850+0000 I STORAGE  [initandlisten] 
+[36mmongo    |[0m 2018-11-01T18:09:24.850+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+[36mmongo    |[0m 2018-11-01T18:09:24.850+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+[36mmongo    |[0m 2018-11-01T18:09:24.850+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=1334M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+[36mmongo    |[0m 2018-11-01T18:09:26.798+0000 I STORAGE  [initandlisten] WiredTiger message [1541095766:798158][1:0x7f363cfa1a00], txn-recover: Main recovery loop: starting at 6/7808
+[36mmongo    |[0m 2018-11-01T18:09:27.263+0000 I STORAGE  [initandlisten] WiredTiger message [1541095767:263040][1:0x7f363cfa1a00], txn-recover: Recovering log 6 through 7
+[36mmongo    |[0m 2018-11-01T18:09:27.524+0000 I STORAGE  [initandlisten] WiredTiger message [1541095767:524371][1:0x7f363cfa1a00], txn-recover: Recovering log 7 through 7
+[36mmongo    |[0m 2018-11-01T18:09:27.782+0000 I STORAGE  [initandlisten] WiredTiger message [1541095767:782024][1:0x7f363cfa1a00], txn-recover: Set global recovery timestamp: 0
+[36mmongo    |[0m 2018-11-01T18:09:27.838+0000 I RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+[36mmongo    |[0m 2018-11-01T18:09:27.853+0000 I CONTROL  [initandlisten] 
+[36mmongo    |[0m 2018-11-01T18:09:27.853+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+[36mmongo    |[0m 2018-11-01T18:09:27.853+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+[36mmongo    |[0m 2018-11-01T18:09:27.853+0000 I CONTROL  [initandlisten] 
+[36mmongo    |[0m 2018-11-01T18:09:27.853+0000 W CONTROL  [initandlisten] 
+[36mmongo    |[0m 2018-11-01T18:09:27.853+0000 W CONTROL  [initandlisten] 
+[36mmongo    |[0m 2018-11-01T18:09:27.853+0000 I CONTROL  [initandlisten] 
+[36mmongo    |[0m 2018-11-01T18:09:27.902+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+[36mmongo    |[0m 2018-11-01T18:09:27.906+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+[36mmongo    |[0m 2018-11-01T18:09:28.502+0000 I NETWORK  [listener] connection accepted from 172.18.0.3:37154 #1 (1 connection now open)
+[36mmongo    |[0m 2018-11-01T18:09:28.510+0000 I NETWORK  [conn1] received client metadata from 172.18.0.3:37154 conn1: { driver: { name: "nodejs", version: "3.1.6" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.15.0-1021-gcp" }, platform: "Node.js v8.12.0, LE, mongodb-core: 3.1.5" }
+[33mretirementcastle_node-be |[0m Server is listening on port 3000
+[33mretirementcastle_node-be |[0m Could not connect to the database. Exiting now... { MongoNetworkError: failed to connect to server [mongo:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 172.18.0.2:27017]
+[33mretirementcastle_node-be |[0m     at Pool.<anonymous> (/usr/src/app/node_modules/mongodb-core/lib/topologies/server.js:564:11)
+[33mretirementcastle_node-be |[0m     at emitOne (events.js:116:13)
+[33mretirementcastle_node-be |[0m     at Pool.emit (events.js:211:7)
+[33mretirementcastle_node-be |[0m     at Connection.<anonymous> (/usr/src/app/node_modules/mongodb-core/lib/connection/pool.js:317:12)
+[33mretirementcastle_node-be |[0m     at Object.onceWrapper (events.js:317:30)
+[33mretirementcastle_node-be |[0m     at emitTwo (events.js:126:13)
+[33mretirementcastle_node-be |[0m     at Connection.emit (events.js:214:7)
+[33mretirementcastle_node-be |[0m     at Socket.<anonymous> (/usr/src/app/node_modules/mongodb-core/lib/connection/connection.js:246:50)
+[33mretirementcastle_node-be |[0m     at Object.onceWrapper (events.js:315:30)
+[33mretirementcastle_node-be |[0m     at emitOne (events.js:116:13)
+[33mretirementcastle_node-be |[0m     at Socket.emit (events.js:211:7)
+[33mretirementcastle_node-be |[0m     at emitErrorNT (internal/streams/destroy.js:66:8)
+[33mretirementcastle_node-be |[0m     at _combinedTickCallback (internal/process/next_tick.js:139:11)
+[33mretirementcastle_node-be |[0m     at process._tickCallback (internal/process/next_tick.js:181:9)
+[33mretirementcastle_node-be |[0m   name: 'MongoNetworkError',
+[33mretirementcastle_node-be |[0m   errorLabels: [ 'TransientTransactionError' ],
+[33mretirementcastle_node-be |[0m   [Symbol(mongoErrorContextSymbol)]: {} }
+[33mretirementcastle_node-be |[0m Server is listening on port 3000
+[33mretirementcastle_node-be |[0m Could not connect to the database. Exiting now... { MongoNetworkError: failed to connect to server [mongo:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 172.18.0.2:27017]
+[33mretirementcastle_node-be |[0m     at Pool.<anonymous> (/usr/src/app/node_modules/mongodb-core/lib/topologies/server.js:564:11)
+[33mretirementcastle_node-be |[0m     at emitOne (events.js:116:13)
+[33mretirementcastle_node-be |[0m     at Pool.emit (events.js:211:7)
+[33mretirementcastle_node-be |[0m     at Connection.<anonymous> (/usr/src/app/node_modules/mongodb-core/lib/connection/pool.js:317:12)
+[33mretirementcastle_node-be |[0m     at Object.onceWrapper (events.js:317:30)
+[33mretirementcastle_node-be |[0m     at emitTwo (events.js:126:13)
+[33mretirementcastle_node-be |[0m     at Connection.emit (events.js:214:7)
+[33mretirementcastle_node-be |[0m     at Socket.<anonymous> (/usr/src/app/node_modules/mongodb-core/lib/connection/connection.js:246:50)
+[33mretirementcastle_node-be |[0m     at Object.onceWrapper (events.js:315:30)
+[33mretirementcastle_node-be |[0m     at emitOne (events.js:116:13)
+[33mretirementcastle_node-be |[0m     at Socket.emit (events.js:211:7)
+[33mretirementcastle_node-be |[0m     at emitErrorNT (internal/streams/destroy.js:66:8)
+[33mretirementcastle_node-be |[0m     at _combinedTickCallback (internal/process/next_tick.js:139:11)
+[33mretirementcastle_node-be |[0m     at process._tickCallback (internal/process/next_tick.js:181:9)
+[33mretirementcastle_node-be |[0m   name: 'MongoNetworkError',
+[33mretirementcastle_node-be |[0m   errorLabels: [ 'TransientTransactionError' ],
+[33mretirementcastle_node-be |[0m   [Symbol(mongoErrorContextSymbol)]: {} }
+[33mretirementcastle_node-be |[0m Server is listening on port 3000
+[33mretirementcastle_node-be |[0m Successfully connected to the database
+[36mmongo    |[0m 2018-11-02T09:31:53.419+0000 I NETWORK  [listener] connection accepted from 184.105.247.252:43912 #2 (2 connections now open)
+[36mmongo    |[0m 2018-11-02T09:31:53.805+0000 I NETWORK  [conn2] end connection 184.105.247.252:43912 (1 connection now open)
+[36mmongo    |[0m 2018-11-02T09:32:05.350+0000 I NETWORK  [listener] connection accepted from 184.105.247.252:60402 #3 (2 connections now open)
+[36mmongo    |[0m 2018-11-02T09:32:05.534+0000 I NETWORK  [conn3] end connection 184.105.247.252:60402 (1 connection now open)
+[36mmongo    |[0m 2018-11-02T09:41:15.998+0000 I NETWORK  [listener] connection accepted from 196.52.43.56:56023 #4 (2 connections now open)
+[36mmongo    |[0m 2018-11-02T09:41:19.393+0000 I NETWORK  [conn4] end connection 196.52.43.56:56023 (1 connection now open)
+[36mmongo    |[0m 2018-11-02T20:44:14.874+0000 I NETWORK  [listener] connection accepted from 198.108.66.64:7904 #5 (2 connections now open)
+[36mmongo    |[0m 2018-11-02T20:44:15.181+0000 I NETWORK  [conn5] end connection 198.108.66.64:7904 (1 connection now open)
+[36mmongo    |[0m 2018-11-03T09:34:03.108+0000 I NETWORK  [listener] connection accepted from 216.218.206.67:20204 #6 (2 connections now open)
+[36mmongo    |[0m 2018-11-03T09:34:03.347+0000 I NETWORK  [conn6] end connection 216.218.206.67:20204 (1 connection now open)
+[36mmongo    |[0m 2018-11-03T09:34:15.382+0000 I NETWORK  [listener] connection accepted from 216.218.206.67:30708 #7 (2 connections now open)
+[36mmongo    |[0m 2018-11-03T09:34:15.561+0000 I NETWORK  [conn7] end connection 216.218.206.67:30708 (1 connection now open)
+[36mmongo    |[0m 2018-11-03T12:14:13.221+0000 I NETWORK  [listener] connection accepted from 117.50.7.159:44448 #8 (2 connections now open)
+[36mmongo    |[0m 2018-11-03T12:14:13.965+0000 I NETWORK  [listener] connection accepted from 117.50.7.159:44940 #9 (3 connections now open)
+[36mmongo    |[0m 2018-11-03T12:14:16.657+0000 I NETWORK  [conn8] end connection 117.50.7.159:44448 (2 connections now open)
+[36mmongo    |[0m 2018-11-03T12:14:16.659+0000 I NETWORK  [conn9] end connection 117.50.7.159:44940 (1 connection now open)
+[36mmongo    |[0m 2018-11-03T15:23:51.912+0000 I NETWORK  [conn1] end connection 172.18.0.3:37154 (0 connections now open)
+[36mmongo    |[0m 2018-11-03T15:23:54.606+0000 I NETWORK  [listener] connection accepted from 172.18.0.3:51668 #10 (1 connection now open)
+[36mmongo    |[0m 2018-11-03T15:23:54.617+0000 I NETWORK  [conn10] received client metadata from 172.18.0.3:51668 conn10: { driver: { name: "nodejs", version: "3.1.6" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.15.0-1021-gcp" }, platform: "Node.js v8.12.0, LE, mongodb-core: 3.1.5" }
+[36mmongo    |[0m 2018-11-03T15:24:17.700+0000 I NETWORK  [conn10] end connection 172.18.0.3:51668 (0 connections now open)
+[33mretirementcastle_node-be exited with code 137
+[0m[32mretirementcastle_node-be |[0m Server is listening on port 3000
+[32mretirementcastle_node-be |[0m Could not connect to the database. Exiting now... { MongoNetworkError: failed to connect to server [mongo:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 172.18.0.2:27017]
+[32mretirementcastle_node-be |[0m     at Pool.<anonymous> (/usr/src/app/node_modules/mongodb-core/lib/topologies/server.js:564:11)
+[32mretirementcastle_node-be |[0m     at emitOne (events.js:116:13)
+[32mretirementcastle_node-be |[0m     at Pool.emit (events.js:211:7)
+[32mretirementcastle_node-be |[0m     at Connection.<anonymous> (/usr/src/app/node_modules/mongodb-core/lib/connection/pool.js:317:12)
+[32mretirementcastle_node-be |[0m     at Object.onceWrapper (events.js:317:30)
+[32mretirementcastle_node-be |[0m     at emitTwo (events.js:126:13)
+[32mretirementcastle_node-be |[0m     at Connection.emit (events.js:214:7)
+[32mretirementcastle_node-be |[0m     at Socket.<anonymous> (/usr/src/app/node_modules/mongodb-core/lib/connection/connection.js:246:50)
+[32mretirementcastle_node-be |[0m     at Object.onceWrapper (events.js:315:30)
+[32mretirementcastle_node-be |[0m     at emitOne (events.js:116:13)
+[32mretirementcastle_node-be |[0m     at Socket.emit (events.js:211:7)
+[32mretirementcastle_node-be |[0m     at emitErrorNT (internal/streams/destroy.js:66:8)
+[32mretirementcastle_node-be |[0m     at _combinedTickCallback (internal/process/next_tick.js:139:11)
+[32mretirementcastle_node-be |[0m     at process._tickCallback (internal/process/next_tick.js:181:9)
+[32mretirementcastle_node-be |[0m   name: 'MongoNetworkError',
+[32mretirementcastle_node-be |[0m   errorLabels: [ 'TransientTransactionError' ],
+[32mretirementcastle_node-be |[0m   [Symbol(mongoErrorContextSymbol)]: {} }
+[32mretirementcastle_node-be |[0m Server is listening on port 3000
+[32mretirementcastle_node-be |[0m Could not connect to the database. Exiting now... { MongoNetworkError: failed to connect to server [mongo:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 172.18.0.2:27017]
+[32mretirementcastle_node-be |[0m     at Pool.<anonymous> (/usr/src/app/node_modules/mongodb-core/lib/topologies/server.js:564:11)
+[32mretirementcastle_node-be |[0m     at emitOne (events.js:116:13)
+[32mretirementcastle_node-be |[0m     at Pool.emit (events.js:211:7)
+[32mretirementcastle_node-be |[0m     at Connection.<anonymous> (/usr/src/app/node_modules/mongodb-core/lib/connection/pool.js:317:12)
+[32mretirementcastle_node-be |[0m     at Object.onceWrapper (events.js:317:30)
+[32mretirementcastle_node-be |[0m     at emitTwo (events.js:126:13)
+[32mretirementcastle_node-be |[0m     at Connection.emit (events.js:214:7)
+[32mretirementcastle_node-be |[0m     at Socket.<anonymous> (/usr/src/app/node_modules/mongodb-core/lib/connection/connection.js:246:50)
+[32mretirementcastle_node-be |[0m     at Object.onceWrapper (events.js:315:30)
+[32mretirementcastle_node-be |[0m     at emitOne (events.js:116:13)
+[32mretirementcastle_node-be |[0m     at Socket.emit (events.js:211:7)
+[32mretirementcastle_node-be |[0m     at emitErrorNT (internal/streams/destroy.js:66:8)
+[32mretirementcastle_node-be |[0m     at _combinedTickCallback (internal/process/next_tick.js:139:11)
+[32mretirementcastle_node-be |[0m     at process._tickCallback (internal/process/next_tick.js:181:9)
+[32mretirementcastle_node-be |[0m   name: 'MongoNetworkError',
+[32mretirementcastle_node-be |[0m   errorLabels: [ 'TransientTransactionError' ],
+[32mretirementcastle_node-be |[0m   [Symbol(mongoErrorContextSymbol)]: {} }
+[32mretirementcastle_node-be |[0m Server is listening on port 3000
+[32mretirementcastle_node-be |[0m Successfully connected to the database
+[32mretirementcastle_node-be |[0m Server is listening on port 3000
+[32mretirementcastle_node-be |[0m Successfully connected to the database
+[32mretirementcastle_node-be |[0m Server is listening on port 3000
+[36mmongo    |[0m 2018-11-03T15:24:18.890+0000 I NETWORK  [listener] connection accepted from 172.18.0.3:51674 #11 (1 connection now open)
+[36mmongo    |[0m 2018-11-03T15:24:18.902+0000 I NETWORK  [conn11] received client metadata from 172.18.0.3:51674 conn11: { driver: { name: "nodejs", version: "3.1.6" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.15.0-1021-gcp" }, platform: "Node.js v8.12.0, LE, mongodb-core: 3.1.5" }
+[32mretirementcastle_node-be |[0m Successfully connected to the database
+[36mmongo    |[0m 2018-11-03T15:24:27.697+0000 I NETWORK  [conn11] end connection 172.18.0.3:51674 (0 connections now open)
+[36mmongo    |[0m 2018-11-03T15:24:28.912+0000 I NETWORK  [listener] connection accepted from 172.18.0.3:51676 #12 (1 connection now open)
+[36mmongo    |[0m 2018-11-03T15:24:28.923+0000 I NETWORK  [conn12] received client metadata from 172.18.0.3:51676 conn12: { driver: { name: "nodejs", version: "3.1.6" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.15.0-1021-gcp" }, platform: "Node.js v8.12.0, LE, mongodb-core: 3.1.5" }
+[36mmongo    |[0m 2018-11-03T15:27:32.792+0000 I NETWORK  [conn12] end connection 172.18.0.3:51676 (0 connections now open)
+[32mretirementcastle_node-be exited with code 137
+[0m[35mretirementcastle_node-be |[0m Server is listening on port 3000
+[35mretirementcastle_node-be |[0m Could not connect to the database. Exiting now... { MongoNetworkError: failed to connect to server [mongo:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 172.18.0.2:27017]
+[35mretirementcastle_node-be |[0m     at Pool.<anonymous> (/usr/src/app/node_modules/mongodb-core/lib/topologies/server.js:564:11)
+[35mretirementcastle_node-be |[0m     at emitOne (events.js:116:13)
+[35mretirementcastle_node-be |[0m     at Pool.emit (events.js:211:7)
+[35mretirementcastle_node-be |[0m     at Connection.<anonymous> (/usr/src/app/node_modules/mongodb-core/lib/connection/pool.js:317:12)
+[35mretirementcastle_node-be |[0m     at Object.onceWrapper (events.js:317:30)
+[35mretirementcastle_node-be |[0m     at emitTwo (events.js:126:13)
+[35mretirementcastle_node-be |[0m     at Connection.emit (events.js:214:7)
+[35mretirementcastle_node-be |[0m     at Socket.<anonymous> (/usr/src/app/node_modules/mongodb-core/lib/connection/connection.js:246:50)
+[35mretirementcastle_node-be |[0m     at Object.onceWrapper (events.js:315:30)
+[35mretirementcastle_node-be |[0m     at emitOne (events.js:116:13)
+[35mretirementcastle_node-be |[0m     at Socket.emit (events.js:211:7)
+[35mretirementcastle_node-be |[0m     at emitErrorNT (internal/streams/destroy.js:66:8)
+[35mretirementcastle_node-be |[0m     at _combinedTickCallback (internal/process/next_tick.js:139:11)
+[35mretirementcastle_node-be |[0m     at process._tickCallback (internal/process/next_tick.js:181:9)
+[35mretirementcastle_node-be |[0m   name: 'MongoNetworkError',
+[35mretirementcastle_node-be |[0m   errorLabels: [ 'TransientTransactionError' ],
+[35mretirementcastle_node-be |[0m   [Symbol(mongoErrorContextSymbol)]: {} }
+[35mretirementcastle_node-be |[0m Server is listening on port 3000
+[35mretirementcastle_node-be |[0m Could not connect to the database. Exiting now... { MongoNetworkError: failed to connect to server [mongo:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 172.18.0.2:27017]
+[35mretirementcastle_node-be |[0m     at Pool.<anonymous> (/usr/src/app/node_modules/mongodb-core/lib/topologies/server.js:564:11)
+[35mretirementcastle_node-be |[0m     at emitOne (events.js:116:13)
+[35mretirementcastle_node-be |[0m     at Pool.emit (events.js:211:7)
+[35mretirementcastle_node-be |[0m     at Connection.<anonymous> (/usr/src/app/node_modules/mongodb-core/lib/connection/pool.js:317:12)
+[35mretirementcastle_node-be |[0m     at Object.onceWrapper (events.js:317:30)
+[35mretirementcastle_node-be |[0m     at emitTwo (events.js:126:13)
+[35mretirementcastle_node-be |[0m     at Connection.emit (events.js:214:7)
+[35mretirementcastle_node-be |[0m     at Socket.<anonymous> (/usr/src/app/node_modules/mongodb-core/lib/connection/connection.js:246:50)
+[35mretirementcastle_node-be |[0m     at Object.onceWrapper (events.js:315:30)
+[35mretirementcastle_node-be |[0m     at emitOne (events.js:116:13)
+[35mretirementcastle_node-be |[0m     at Socket.emit (events.js:211:7)
+[35mretirementcastle_node-be |[0m     at emitErrorNT (internal/streams/destroy.js:66:8)
+[35mretirementcastle_node-be |[0m     at _combinedTickCallback (internal/process/next_tick.js:139:11)
+[35mretirementcastle_node-be |[0m     at process._tickCallback (internal/process/next_tick.js:181:9)
+[35mretirementcastle_node-be |[0m   name: 'MongoNetworkError',
+[35mretirementcastle_node-be |[0m   errorLabels: [ 'TransientTransactionError' ],
+[35mretirementcastle_node-be |[0m   [Symbol(mongoErrorContextSymbol)]: {} }
+[35mretirementcastle_node-be |[0m Server is listening on port 3000
+[35mretirementcastle_node-be |[0m Successfully connected to the database
+[35mretirementcastle_node-be |[0m Server is listening on port 3000
+[35mretirementcastle_node-be |[0m Successfully connected to the database
+[35mretirementcastle_node-be |[0m Server is listening on port 3000
+[35mretirementcastle_node-be |[0m Successfully connected to the database
+[35mretirementcastle_node-be |[0m Server is listening on port 3000
+[35mretirementcastle_node-be |[0m Successfully connected to the database
+[35mretirementcastle_node-be |[0m Server is listening on port 3000
+[36mmongo    |[0m 2018-11-03T15:27:33.967+0000 I NETWORK  [listener] connection accepted from 172.18.0.3:51694 #13 (1 connection now open)
+[36mmongo    |[0m 2018-11-03T15:27:33.977+0000 I NETWORK  [conn13] received client metadata from 172.18.0.3:51694 conn13: { driver: { name: "nodejs", version: "3.1.6" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.15.0-1021-gcp" }, platform: "Node.js v8.12.0, LE, mongodb-core: 3.1.5" }
+[35mretirementcastle_node-be |[0m Successfully connected to the database
+[36mmongo    |[0m 2018-11-04T09:26:49.529+0000 I NETWORK  [listener] connection accepted from 216.218.206.68:17518 #14 (2 connections now open)
+[36mmongo    |[0m 2018-11-04T09:26:49.785+0000 I NETWORK  [conn14] end connection 216.218.206.68:17518 (1 connection now open)
+[36mmongo    |[0m 2018-11-04T09:27:01.884+0000 I NETWORK  [listener] connection accepted from 216.218.206.68:33008 #15 (2 connections now open)
+[36mmongo    |[0m 2018-11-04T09:27:02.066+0000 I NETWORK  [conn15] end connection 216.218.206.68:33008 (1 connection now open)
+[36mmongo    |[0m 2018-11-05T03:30:56.454+0000 I NETWORK  [listener] connection accepted from 107.170.219.123:47926 #16 (2 connections now open)
+[36mmongo    |[0m 2018-11-05T03:31:06.280+0000 I NETWORK  [conn16] end connection 107.170.219.123:47926 (1 connection now open)
+[36mmongo    |[0m 2018-11-05T09:46:08.316+0000 I NETWORK  [listener] connection accepted from 74.82.47.3:41118 #17 (2 connections now open)
+[36mmongo    |[0m 2018-11-05T09:46:08.543+0000 I NETWORK  [conn17] end connection 74.82.47.3:41118 (1 connection now open)
+[36mmongo    |[0m 2018-11-05T09:46:21.934+0000 I NETWORK  [listener] connection accepted from 74.82.47.3:52474 #18 (2 connections now open)
+[36mmongo    |[0m 2018-11-05T09:46:22.116+0000 I NETWORK  [conn18] end connection 74.82.47.3:52474 (1 connection now open)
+[36mmongo    |[0m 2018-11-05T10:37:43.523+0000 W NETWORK  [listener] Error accepting new connection SocketException: remote_endpoint: Transport endpoint is not connected
+[36mmongo    |[0m 2018-11-05T10:37:43.809+0000 I NETWORK  [listener] connection accepted from 36.110.211.69:13232 #20 (2 connections now open)
+[36mmongo    |[0m 2018-11-05T10:37:50.159+0000 I NETWORK  [conn20] end connection 36.110.211.69:13232 (1 connection now open)
+[36mmongo    |[0m 2018-11-05T20:08:01.165+0000 I NETWORK  [listener] connection accepted from 196.52.43.91:51900 #21 (2 connections now open)
+[36mmongo    |[0m 2018-11-05T20:13:14.763+0000 I NETWORK  [conn21] end connection 196.52.43.91:51900 (1 connection now open)
+[36mmongo    |[0m 2018-11-05T21:35:21.655+0000 I NETWORK  [listener] connection accepted from 123.249.0.134:2188 #22 (2 connections now open)
+[36mmongo    |[0m 2018-11-05T21:35:21.660+0000 I NETWORK  [conn22] Error receiving request from client: ProtocolError: Client sent an HTTP request over a native MongoDB connection. Ending connection from 123.249.0.134:2188 (connection id: 22)
+[36mmongo    |[0m 2018-11-05T21:35:21.660+0000 I NETWORK  [conn22] end connection 123.249.0.134:2188 (1 connection now open)
+[36mmongo    |[0m 2018-11-05T22:59:25.056+0000 I NETWORK  [listener] connection accepted from 122.228.19.80:10713 #23 (2 connections now open)
+[36mmongo    |[0m 2018-11-05T22:59:25.396+0000 I NETWORK  [conn23] end connection 122.228.19.80:10713 (1 connection now open)
+[36mmongo    |[0m 2018-11-06T09:38:55.121+0000 I NETWORK  [listener] connection accepted from 74.82.47.5:32040 #24 (2 connections now open)
+[36mmongo    |[0m 2018-11-06T09:38:55.393+0000 I NETWORK  [conn24] end connection 74.82.47.5:32040 (1 connection now open)
+[36mmongo    |[0m 2018-11-06T09:39:08.273+0000 I NETWORK  [listener] connection accepted from 74.82.47.5:50524 #25 (2 connections now open)
+[36mmongo    |[0m 2018-11-06T09:39:08.501+0000 I NETWORK  [conn25] end connection 74.82.47.5:50524 (1 connection now open)
+[36mmongo    |[0m 2018-11-07T10:26:44.658+0000 I NETWORK  [listener] connection accepted from 74.82.47.2:57200 #26 (2 connections now open)
+[36mmongo    |[0m 2018-11-07T10:26:44.913+0000 I NETWORK  [conn26] end connection 74.82.47.2:57200 (1 connection now open)
+[36mmongo    |[0m 2018-11-07T10:26:57.182+0000 I NETWORK  [listener] connection accepted from 74.82.47.2:4154 #27 (2 connections now open)
+[36mmongo    |[0m 2018-11-07T10:26:57.364+0000 I NETWORK  [conn27] end connection 74.82.47.2:4154 (1 connection now open)
+[36mmongo    |[0m 2018-11-08T04:34:36.492+0000 I NETWORK  [listener] connection accepted from 89.248.167.131:48081 #28 (2 connections now open)
+[36mmongo    |[0m 2018-11-08T04:34:41.750+0000 I NETWORK  [conn28] end connection 89.248.167.131:48081 (1 connection now open)
+[36mmongo    |[0m 2018-11-08T08:30:29.664+0000 I NETWORK  [listener] connection accepted from 18.209.206.81:35950 #29 (2 connections now open)
+[36mmongo    |[0m 2018-11-08T08:30:29.667+0000 I NETWORK  [conn29] received client metadata from 18.209.206.81:35950 conn29: { driver: { name: "PyMongo", version: "3.7.1" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.4.0-1061-aws" }, platform: "CPython 3.5.2.final.0" }
+[36mmongo    |[0m 2018-11-08T08:30:29.957+0000 I NETWORK  [listener] connection accepted from 18.209.206.81:35952 #30 (3 connections now open)
+[36mmongo    |[0m 2018-11-08T08:30:29.958+0000 I NETWORK  [conn30] received client metadata from 18.209.206.81:35952 conn30: { driver: { name: "PyMongo", version: "3.7.1" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.4.0-1061-aws" }, platform: "CPython 3.5.2.final.0" }
+[36mmongo    |[0m 2018-11-08T08:30:31.415+0000 I NETWORK  [conn30] end connection 18.209.206.81:35952 (2 connections now open)
+[36mmongo    |[0m 2018-11-08T08:30:31.419+0000 I NETWORK  [conn29] end connection 18.209.206.81:35950 (1 connection now open)
+[36mmongo    |[0m 2018-11-08T10:02:21.341+0000 I NETWORK  [listener] connection accepted from 92.60.188.221:34358 #31 (2 connections now open)
+[36mmongo    |[0m 2018-11-08T10:02:21.345+0000 I NETWORK  [conn31] received client metadata from 92.60.188.221:34358 conn31: { driver: { name: "PyMongo", version: "3.7.2" }, os: { type: "Linux", name: "Ubuntu 18.04 bionic", architecture: "x86_64", version: "4.15.0-36-generic" }, platform: "CPython 2.7.15.candidate.1" }
+[36mmongo    |[0m 2018-11-08T10:02:21.841+0000 I NETWORK  [listener] connection accepted from 92.60.188.221:34380 #32 (3 connections now open)
+[36mmongo    |[0m 2018-11-08T10:02:21.845+0000 I NETWORK  [conn32] received client metadata from 92.60.188.221:34380 conn32: { driver: { name: "PyMongo", version: "3.7.2" }, os: { type: "Linux", name: "Ubuntu 18.04 bionic", architecture: "x86_64", version: "4.15.0-36-generic" }, platform: "CPython 2.7.15.candidate.1" }
+[36mmongo    |[0m 2018-11-08T10:02:24.294+0000 I NETWORK  [conn32] end connection 92.60.188.221:34380 (2 connections now open)
+[36mmongo    |[0m 2018-11-08T10:02:24.294+0000 I NETWORK  [conn31] end connection 92.60.188.221:34358 (1 connection now open)
+[36mmongo    |[0m 2018-11-08T10:15:33.807+0000 I NETWORK  [listener] connection accepted from 184.105.139.70:37200 #33 (2 connections now open)
+[36mmongo    |[0m 2018-11-08T10:15:34.064+0000 I NETWORK  [conn33] end connection 184.105.139.70:37200 (1 connection now open)
+[36mmongo    |[0m 2018-11-08T10:15:46.512+0000 I NETWORK  [listener] connection accepted from 184.105.139.70:53726 #34 (2 connections now open)
+[36mmongo    |[0m 2018-11-08T10:15:46.694+0000 I NETWORK  [conn34] end connection 184.105.139.70:53726 (1 connection now open)
+[36mmongo    |[0m 2018-11-09T02:11:54.477+0000 I NETWORK  [listener] connection accepted from 119.28.152.64:35306 #35 (2 connections now open)
+[36mmongo    |[0m 2018-11-09T02:11:56.097+0000 I NETWORK  [conn35] end connection 119.28.152.64:35306 (1 connection now open)
+[36mmongo    |[0m 2018-11-09T06:04:45.480+0000 I NETWORK  [listener] connection accepted from 198.108.66.32:18182 #36 (2 connections now open)
+[36mmongo    |[0m 2018-11-09T06:04:45.769+0000 I NETWORK  [conn36] end connection 198.108.66.32:18182 (1 connection now open)
+[36mmongo    |[0m 2018-11-09T10:06:07.721+0000 I NETWORK  [listener] connection accepted from 184.105.247.252:58100 #37 (2 connections now open)
+[36mmongo    |[0m 2018-11-09T10:06:08.189+0000 I NETWORK  [conn37] end connection 184.105.247.252:58100 (1 connection now open)
+[36mmongo    |[0m 2018-11-09T10:06:22.444+0000 I NETWORK  [listener] connection accepted from 184.105.247.252:6276 #38 (2 connections now open)
+[36mmongo    |[0m 2018-11-09T10:06:22.627+0000 I NETWORK  [conn38] end connection 184.105.247.252:6276 (1 connection now open)
+[36mmongo    |[0m 2018-11-09T19:29:19.633+0000 I NETWORK  [listener] connection accepted from 107.170.211.208:42120 #39 (2 connections now open)
+[36mmongo    |[0m 2018-11-09T19:29:29.460+0000 I NETWORK  [conn39] end connection 107.170.211.208:42120 (1 connection now open)
+[36mmongo    |[0m 2018-11-09T19:47:44.627+0000 I NETWORK  [listener] connection accepted from 196.52.43.52:65150 #40 (2 connections now open)
+[36mmongo    |[0m 2018-11-09T19:47:47.818+0000 I NETWORK  [conn40] end connection 196.52.43.52:65150 (1 connection now open)
+[36mmongo    |[0m 2018-11-10T01:07:43.604+0000 I NETWORK  [listener] connection accepted from 198.108.66.16:56958 #41 (2 connections now open)
+[36mmongo    |[0m 2018-11-10T01:07:43.894+0000 I NETWORK  [conn41] end connection 198.108.66.16:56958 (1 connection now open)
+[36mmongo    |[0m 2018-11-10T10:17:13.585+0000 I NETWORK  [listener] connection accepted from 74.82.47.3:27258 #42 (2 connections now open)
+[36mmongo    |[0m 2018-11-10T10:17:13.852+0000 I NETWORK  [conn42] end connection 74.82.47.3:27258 (1 connection now open)
+[36mmongo    |[0m 2018-11-10T10:17:26.160+0000 I NETWORK  [listener] connection accepted from 74.82.47.3:41034 #43 (2 connections now open)
+[36mmongo    |[0m 2018-11-10T10:17:26.341+0000 I NETWORK  [conn43] end connection 74.82.47.3:41034 (1 connection now open)
+[36mmongo    |[0m 2018-11-10T13:52:27.573+0000 I NETWORK  [listener] connection accepted from 37.187.30.122:33314 #44 (2 connections now open)
+[36mmongo    |[0m 2018-11-10T13:52:27.576+0000 I NETWORK  [conn44] received client metadata from 37.187.30.122:33314 conn44: { driver: { name: "PyMongo", version: "3.7.1" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "3.10.0-862.11.6.el7.x86_64" }, platform: "CPython 3.5.2.final.0" }
+[36mmongo    |[0m 2018-11-10T13:52:27.993+0000 I NETWORK  [listener] connection accepted from 37.187.30.122:33352 #45 (3 connections now open)
+[36mmongo    |[0m 2018-11-10T13:52:27.994+0000 I NETWORK  [conn45] received client metadata from 37.187.30.122:33352 conn45: { driver: { name: "PyMongo", version: "3.7.1" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "3.10.0-862.11.6.el7.x86_64" }, platform: "CPython 3.5.2.final.0" }
+[36mmongo    |[0m 2018-11-10T13:52:32.401+0000 I NETWORK  [conn44] end connection 37.187.30.122:33314 (2 connections now open)
+[36mmongo    |[0m 2018-11-10T13:52:32.404+0000 I NETWORK  [conn45] end connection 37.187.30.122:33352 (1 connection now open)
+[36mmongo    |[0m 2018-11-10T22:45:09.742+0000 I NETWORK  [listener] connection accepted from 80.82.77.139:53749 #46 (2 connections now open)
+[36mmongo    |[0m 2018-11-10T22:45:24.857+0000 I NETWORK  [conn46] end connection 80.82.77.139:53749 (1 connection now open)
+[36mmongo    |[0m 2018-11-10T23:48:04.095+0000 I NETWORK  [listener] connection accepted from 107.170.211.92:59560 #47 (2 connections now open)
+[36mmongo    |[0m 2018-11-10T23:48:13.920+0000 I NETWORK  [conn47] end connection 107.170.211.92:59560 (1 connection now open)
+[36mmongo    |[0m 2018-11-11T06:37:34.972+0000 I NETWORK  [listener] connection accepted from 93.170.123.65:49700 #48 (2 connections now open)
+[36mmongo    |[0m 2018-11-11T06:37:34.975+0000 I NETWORK  [conn48] received client metadata from 93.170.123.65:49700 conn48: { driver: { name: "PyMongo", version: "3.7.1" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.4.0-116-generic" }, platform: "CPython 3.6.4.final.0" }
+[36mmongo    |[0m 2018-11-11T06:37:35.496+0000 I NETWORK  [listener] connection accepted from 185.235.129.116:50010 #49 (3 connections now open)
+[36mmongo    |[0m 2018-11-11T06:37:35.503+0000 I NETWORK  [conn49] received client metadata from 185.235.129.116:50010 conn49: { driver: { name: "PyMongo", version: "3.7.1" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.4.0-116-generic" }, platform: "CPython 3.6.4.final.0" }
+[36mmongo    |[0m 2018-11-11T06:37:38.419+0000 I NETWORK  [conn49] end connection 185.235.129.116:50010 (2 connections now open)
+[36mmongo    |[0m 2018-11-11T06:37:38.422+0000 I NETWORK  [conn48] end connection 93.170.123.65:49700 (1 connection now open)
+[36mmongo    |[0m 2018-11-11T09:05:24.549+0000 I NETWORK  [listener] connection accepted from 185.235.129.116:52484 #50 (2 connections now open)
+[36mmongo    |[0m 2018-11-11T09:05:24.953+0000 I NETWORK  [conn50] received client metadata from 185.235.129.116:52484 conn50: { driver: { name: "PyMongo", version: "3.7.1" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.4.0-116-generic" }, platform: "CPython 3.6.4.final.0" }
+[36mmongo    |[0m 2018-11-11T09:06:18.159+0000 I NETWORK  [listener] connection accepted from 185.235.129.116:53480 #51 (3 connections now open)
+[36mmongo    |[0m 2018-11-11T09:06:18.307+0000 I NETWORK  [conn51] received client metadata from 185.235.129.116:53480 conn51: { driver: { name: "PyMongo", version: "3.7.1" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.4.0-116-generic" }, platform: "CPython 3.6.4.final.0" }
+[36mmongo    |[0m 2018-11-11T09:06:20.408+0000 I NETWORK  [conn51] end connection 185.235.129.116:53480 (2 connections now open)
+[36mmongo    |[0m 2018-11-11T09:06:20.836+0000 I NETWORK  [conn50] end connection 185.235.129.116:52484 (1 connection now open)
+[36mmongo    |[0m 2018-11-11T10:08:17.974+0000 I NETWORK  [listener] connection accepted from 184.105.139.70:58098 #52 (2 connections now open)
+[36mmongo    |[0m 2018-11-11T10:08:18.223+0000 I NETWORK  [conn52] end connection 184.105.139.70:58098 (1 connection now open)
+[36mmongo    |[0m 2018-11-11T10:08:31.101+0000 I NETWORK  [listener] connection accepted from 184.105.139.70:14750 #53 (2 connections now open)
+[36mmongo    |[0m 2018-11-11T10:08:31.283+0000 I NETWORK  [conn53] end connection 184.105.139.70:14750 (1 connection now open)
+[36mmongo    |[0m 2018-11-12T10:23:59.043+0000 I NETWORK  [listener] connection accepted from 184.105.247.194:58872 #54 (2 connections now open)
+[36mmongo    |[0m 2018-11-12T10:23:59.316+0000 I NETWORK  [conn54] end connection 184.105.247.194:58872 (1 connection now open)
+[36mmongo    |[0m 2018-11-12T10:24:11.775+0000 I NETWORK  [listener] connection accepted from 184.105.247.194:8592 #55 (2 connections now open)
+[36mmongo    |[0m 2018-11-12T10:24:11.960+0000 I NETWORK  [conn55] end connection 184.105.247.194:8592 (1 connection now open)
+[36mmongo    |[0m 2018-11-12T12:02:40.047+0000 I NETWORK  [listener] connection accepted from 198.20.70.114:57698 #56 (2 connections now open)
+[36mmongo    |[0m 2018-11-12T12:02:51.295+0000 I NETWORK  [conn56] end connection 198.20.70.114:57698 (1 connection now open)
+[36mmongo    |[0m 2018-11-12T19:36:23.014+0000 I NETWORK  [listener] connection accepted from 107.170.217.163:33600 #57 (2 connections now open)
+[36mmongo    |[0m 2018-11-12T19:36:32.841+0000 I NETWORK  [conn57] end connection 107.170.217.163:33600 (1 connection now open)
+[36mmongo    |[0m 2018-11-13T00:59:27.176+0000 I NETWORK  [listener] connection accepted from 115.146.123.107:57995 #58 (2 connections now open)
+[36mmongo    |[0m 2018-11-13T00:59:27.179+0000 I NETWORK  [conn58] end connection 115.146.123.107:57995 (1 connection now open)
+[36mmongo    |[0m 2018-11-13T01:12:07.657+0000 I NETWORK  [listener] connection accepted from 115.146.123.107:57205 #59 (2 connections now open)
+[36mmongo    |[0m 2018-11-13T01:12:07.660+0000 I NETWORK  [conn59] end connection 115.146.123.107:57205 (1 connection now open)
+[36mmongo    |[0m 2018-11-13T01:12:08.016+0000 I NETWORK  [listener] connection accepted from 115.146.123.107:57859 #60 (2 connections now open)
+[36mmongo    |[0m 2018-11-13T01:12:08.020+0000 I NETWORK  [conn60] received client metadata from 115.146.123.107:57859 conn60: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Windows", name: "Windows 2012ServerR2", architecture: "AMD64", version: "6.3.9600-" }, platform: "CPython 2.7.14.final.0" }
+[36mmongo    |[0m 2018-11-13T01:12:08.718+0000 I NETWORK  [listener] connection accepted from 115.146.123.107:59238 #61 (3 connections now open)
+[36mmongo    |[0m 2018-11-13T01:12:08.719+0000 I NETWORK  [conn61] received client metadata from 115.146.123.107:59238 conn61: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Windows", name: "Windows 2012ServerR2", architecture: "AMD64", version: "6.3.9600-" }, platform: "CPython 2.7.14.final.0" }
+[36mmongo    |[0m 2018-11-13T01:12:09.713+0000 I NETWORK  [listener] connection accepted from 115.146.123.107:61100 #62 (4 connections now open)
+[36mmongo    |[0m 2018-11-13T01:12:09.716+0000 I NETWORK  [conn62] end connection 115.146.123.107:61100 (3 connections now open)
+[36mmongo    |[0m 2018-11-13T01:12:10.075+0000 I NETWORK  [listener] connection accepted from 115.146.123.107:61846 #63 (4 connections now open)
+[36mmongo    |[0m 2018-11-13T01:12:10.080+0000 I NETWORK  [conn63] received client metadata from 115.146.123.107:61846 conn63: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Windows", name: "Windows 2012ServerR2", architecture: "AMD64", version: "6.3.9600-" }, platform: "CPython 2.7.14.final.0" }
+[36mmongo    |[0m 2018-11-13T01:12:10.811+0000 I NETWORK  [listener] connection accepted from 115.146.123.107:63424 #64 (5 connections now open)
+[36mmongo    |[0m 2018-11-13T01:12:10.813+0000 I NETWORK  [conn64] received client metadata from 115.146.123.107:63424 conn64: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Windows", name: "Windows 2012ServerR2", architecture: "AMD64", version: "6.3.9600-" }, platform: "CPython 2.7.14.final.0" }
+[36mmongo    |[0m 2018-11-13T01:12:10.818+0000 I NETWORK  [conn61] end connection 115.146.123.107:59238 (4 connections now open)
+[36mmongo    |[0m 2018-11-13T01:12:10.818+0000 I NETWORK  [conn60] end connection 115.146.123.107:57859 (3 connections now open)
+[36mmongo    |[0m 2018-11-13T01:12:13.024+0000 I NETWORK  [conn63] end connection 115.146.123.107:61846 (2 connections now open)
+[36mmongo    |[0m 2018-11-13T01:12:13.029+0000 I NETWORK  [conn64] end connection 115.146.123.107:63424 (1 connection now open)
+[36mmongo    |[0m 2018-11-13T02:42:58.480+0000 I NETWORK  [listener] connection accepted from 185.235.129.116:35840 #65 (2 connections now open)
+[36mmongo    |[0m 2018-11-13T02:42:58.484+0000 I NETWORK  [conn65] received client metadata from 185.235.129.116:35840 conn65: { driver: { name: "PyMongo", version: "3.7.1" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.4.0-116-generic" }, platform: "CPython 3.6.4.final.0" }
+[36mmongo    |[0m 2018-11-13T02:42:59.006+0000 I NETWORK  [listener] connection accepted from 185.235.129.116:36142 #66 (3 connections now open)
+[36mmongo    |[0m 2018-11-13T02:42:59.033+0000 I NETWORK  [conn66] received client metadata from 185.235.129.116:36142 conn66: { driver: { name: "PyMongo", version: "3.7.1" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.4.0-116-generic" }, platform: "CPython 3.6.4.final.0" }
+[36mmongo    |[0m 2018-11-13T02:43:01.931+0000 I NETWORK  [conn65] end connection 185.235.129.116:35840 (2 connections now open)
+[36mmongo    |[0m 2018-11-13T02:43:01.934+0000 I NETWORK  [conn66] end connection 185.235.129.116:36142 (1 connection now open)
+[36mmongo    |[0m 2018-11-13T07:02:32.928+0000 I NETWORK  [listener] connection accepted from 93.170.123.65:57148 #67 (2 connections now open)
+[36mmongo    |[0m 2018-11-13T07:02:32.969+0000 I NETWORK  [conn67] received client metadata from 93.170.123.65:57148 conn67: { driver: { name: "PyMongo", version: "3.7.1" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.4.0-116-generic" }, platform: "CPython 3.6.4.final.0" }
+[36mmongo    |[0m 2018-11-13T07:07:21.049+0000 I NETWORK  [listener] connection accepted from 185.235.129.116:33818 #68 (3 connections now open)
+[36mmongo    |[0m 2018-11-13T07:07:21.135+0000 I NETWORK  [conn68] received client metadata from 185.235.129.116:33818 conn68: { driver: { name: "PyMongo", version: "3.7.1" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.4.0-116-generic" }, platform: "CPython 3.6.4.final.0" }
+[36mmongo    |[0m 2018-11-13T07:07:23.125+0000 I NETWORK  [conn68] end connection 185.235.129.116:33818 (2 connections now open)
+[36mmongo    |[0m 2018-11-13T07:07:23.190+0000 I NETWORK  [conn67] end connection 93.170.123.65:57148 (1 connection now open)
+[36mmongo    |[0m 2018-11-13T09:30:51.404+0000 I NETWORK  [listener] connection accepted from 196.52.43.90:56722 #69 (2 connections now open)
+[36mmongo    |[0m 2018-11-13T09:30:54.375+0000 I NETWORK  [conn69] end connection 196.52.43.90:56722 (1 connection now open)
+[36mmongo    |[0m 2018-11-13T10:24:00.520+0000 I NETWORK  [listener] connection accepted from 184.105.247.194:31742 #70 (2 connections now open)
+[36mmongo    |[0m 2018-11-13T10:24:00.736+0000 I NETWORK  [conn70] end connection 184.105.247.194:31742 (1 connection now open)
+[36mmongo    |[0m 2018-11-13T10:24:12.772+0000 I NETWORK  [listener] connection accepted from 184.105.247.194:40078 #71 (2 connections now open)
+[36mmongo    |[0m 2018-11-13T10:24:12.958+0000 I NETWORK  [conn71] end connection 184.105.247.194:40078 (1 connection now open)
+[36mmongo    |[0m 2018-11-13T11:44:17.907+0000 I NETWORK  [listener] connection accepted from 185.235.129.116:52336 #72 (2 connections now open)
+[36mmongo    |[0m 2018-11-13T11:44:17.914+0000 I NETWORK  [conn72] received client metadata from 185.235.129.116:52336 conn72: { driver: { name: "PyMongo", version: "3.7.1" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.4.0-116-generic" }, platform: "CPython 3.6.4.final.0" }
+[36mmongo    |[0m 2018-11-13T11:44:19.681+0000 I NETWORK  [listener] connection accepted from 185.235.129.116:53124 #73 (3 connections now open)
+[36mmongo    |[0m 2018-11-13T11:44:19.693+0000 I NETWORK  [conn73] received client metadata from 185.235.129.116:53124 conn73: { driver: { name: "PyMongo", version: "3.7.1" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.4.0-116-generic" }, platform: "CPython 3.6.4.final.0" }
+[36mmongo    |[0m 2018-11-13T11:44:22.756+0000 I NETWORK  [conn73] end connection 185.235.129.116:53124 (2 connections now open)
+[36mmongo    |[0m 2018-11-13T11:44:22.756+0000 I NETWORK  [conn72] end connection 185.235.129.116:52336 (1 connection now open)
+[36mmongo    |[0m 2018-11-13T13:31:18.229+0000 I NETWORK  [listener] connection accepted from 194.67.212.13:47226 #74 (2 connections now open)
+[36mmongo    |[0m 2018-11-13T13:31:18.357+0000 I NETWORK  [conn74] received client metadata from 194.67.212.13:47226 conn74: { driver: { name: "PyMongo", version: "3.7.1" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.4.0-116-generic" }, platform: "CPython 3.6.4.final.0" }
+[36mmongo    |[0m 2018-11-13T13:31:48.079+0000 I NETWORK  [listener] connection accepted from 185.235.129.116:47764 #75 (3 connections now open)
+[36mmongo    |[0m 2018-11-13T13:31:48.094+0000 I NETWORK  [conn75] received client metadata from 185.235.129.116:47764 conn75: { driver: { name: "PyMongo", version: "3.7.1" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.4.0-116-generic" }, platform: "CPython 3.6.4.final.0" }
+[36mmongo    |[0m 2018-11-13T13:31:50.722+0000 I NETWORK  [conn75] end connection 185.235.129.116:47764 (2 connections now open)
+[36mmongo    |[0m 2018-11-13T13:31:51.016+0000 I NETWORK  [conn74] end connection 194.67.212.13:47226 (1 connection now open)
+[36mmongo    |[0m 2018-11-14T10:28:23.508+0000 I NETWORK  [listener] connection accepted from 184.105.247.252:49364 #76 (2 connections now open)
+[36mmongo    |[0m 2018-11-14T10:28:24.021+0000 I NETWORK  [conn76] end connection 184.105.247.252:49364 (1 connection now open)
+[36mmongo    |[0m 2018-11-14T10:28:38.269+0000 I NETWORK  [listener] connection accepted from 184.105.247.252:64844 #77 (2 connections now open)
+[36mmongo    |[0m 2018-11-14T10:28:38.451+0000 I NETWORK  [conn77] end connection 184.105.247.252:64844 (1 connection now open)
+[36mmongo    |[0m 2018-11-14T13:41:14.766+0000 I NETWORK  [listener] connection accepted from 125.64.94.197:36759 #78 (2 connections now open)
+[36mmongo    |[0m 2018-11-14T13:41:14.937+0000 I NETWORK  [conn78] Error receiving request from client: SSLHandshakeFailed: SSL handshake received but server is started without SSL support. Ending connection from 125.64.94.197:36759 (connection id: 78)
+[36mmongo    |[0m 2018-11-14T13:41:14.937+0000 I NETWORK  [conn78] end connection 125.64.94.197:36759 (1 connection now open)
+[36mmongo    |[0m 2018-11-15T05:17:07.480+0000 I NETWORK  [listener] connection accepted from 162.243.158.81:55200 #79 (2 connections now open)
+[36mmongo    |[0m 2018-11-15T05:17:17.306+0000 I NETWORK  [conn79] end connection 162.243.158.81:55200 (1 connection now open)
+[36mmongo    |[0m 2018-11-15T10:15:13.096+0000 I NETWORK  [listener] connection accepted from 184.105.139.68:15702 #80 (2 connections now open)
+[36mmongo    |[0m 2018-11-15T10:15:13.280+0000 I NETWORK  [conn80] end connection 184.105.139.68:15702 (1 connection now open)
+[36mmongo    |[0m 2018-11-15T10:15:25.940+0000 I NETWORK  [listener] connection accepted from 184.105.139.68:22886 #81 (2 connections now open)
+[36mmongo    |[0m 2018-11-15T10:15:26.122+0000 I NETWORK  [conn81] end connection 184.105.139.68:22886 (1 connection now open)
+[36mmongo    |[0m 2018-11-15T19:34:29.138+0000 I NETWORK  [listener] connection accepted from 162.243.157.152:48230 #82 (2 connections now open)
+[36mmongo    |[0m 2018-11-15T19:34:39.005+0000 I NETWORK  [conn82] end connection 162.243.157.152:48230 (1 connection now open)
+[36mmongo    |[0m 2018-11-15T21:46:19.504+0000 I NETWORK  [listener] connection accepted from 196.52.43.121:51148 #83 (2 connections now open)
+[36mmongo    |[0m 2018-11-15T21:46:23.199+0000 I NETWORK  [conn83] end connection 196.52.43.121:51148 (1 connection now open)
+[36mmongo    |[0m 2018-11-16T02:46:19.042+0000 I NETWORK  [listener] connection accepted from 162.243.158.74:49524 #84 (2 connections now open)
+[36mmongo    |[0m 2018-11-16T02:46:28.837+0000 I NETWORK  [conn84] end connection 162.243.158.74:49524 (1 connection now open)
+[36mmongo    |[0m 2018-11-16T05:11:43.582+0000 I NETWORK  [listener] connection accepted from 162.243.158.5:34408 #85 (2 connections now open)
+[36mmongo    |[0m 2018-11-16T05:11:53.407+0000 I NETWORK  [conn85] end connection 162.243.158.5:34408 (1 connection now open)
+[36mmongo    |[0m 2018-11-16T07:01:13.334+0000 I NETWORK  [listener] connection accepted from 198.108.66.128:48770 #86 (2 connections now open)
+[36mmongo    |[0m 2018-11-16T07:01:13.623+0000 I NETWORK  [conn86] end connection 198.108.66.128:48770 (1 connection now open)
+[36mmongo    |[0m 2018-11-16T08:58:25.681+0000 I NETWORK  [listener] connection accepted from 162.243.158.6:44104 #87 (2 connections now open)
+[36mmongo    |[0m 2018-11-16T08:58:35.506+0000 I NETWORK  [conn87] end connection 162.243.158.6:44104 (1 connection now open)
+[36mmongo    |[0m 2018-11-16T10:01:13.988+0000 I NETWORK  [listener] connection accepted from 216.218.206.68:17614 #88 (2 connections now open)
+[36mmongo    |[0m 2018-11-16T10:01:14.401+0000 I NETWORK  [conn88] end connection 216.218.206.68:17614 (1 connection now open)
+[36mmongo    |[0m 2018-11-16T10:01:28.386+0000 I NETWORK  [listener] connection accepted from 216.218.206.68:42668 #89 (2 connections now open)
+[36mmongo    |[0m 2018-11-16T10:01:28.568+0000 I NETWORK  [conn89] end connection 216.218.206.68:42668 (1 connection now open)
+[36mmongo    |[0m 2018-11-16T10:11:37.589+0000 I NETWORK  [listener] connection accepted from 107.170.210.176:43122 #90 (2 connections now open)
+[36mmongo    |[0m 2018-11-16T10:11:47.416+0000 I NETWORK  [conn90] end connection 107.170.210.176:43122 (1 connection now open)
+[36mmongo    |[0m 2018-11-16T11:25:34.009+0000 I NETWORK  [listener] connection accepted from 107.170.215.242:55278 #91 (2 connections now open)
+[36mmongo    |[0m 2018-11-16T11:25:43.834+0000 I NETWORK  [conn91] end connection 107.170.215.242:55278 (1 connection now open)
+[36mmongo    |[0m 2018-11-16T12:44:08.297+0000 I NETWORK  [listener] connection accepted from 162.243.157.80:37302 #92 (2 connections now open)
+[36mmongo    |[0m 2018-11-16T12:44:18.151+0000 I NETWORK  [conn92] end connection 162.243.157.80:37302 (1 connection now open)
+[36mmongo    |[0m 2018-11-16T13:58:53.213+0000 I NETWORK  [listener] connection accepted from 162.243.157.243:38788 #93 (2 connections now open)
+[36mmongo    |[0m 2018-11-16T13:59:03.038+0000 I NETWORK  [conn93] end connection 162.243.157.243:38788 (1 connection now open)
+[36mmongo    |[0m 2018-11-16T15:11:01.636+0000 I NETWORK  [listener] connection accepted from 162.243.158.34:46826 #94 (2 connections now open)
+[36mmongo    |[0m 2018-11-16T15:11:11.464+0000 I NETWORK  [conn94] end connection 162.243.158.34:46826 (1 connection now open)
+[36mmongo    |[0m 2018-11-16T16:34:26.222+0000 I NETWORK  [listener] connection accepted from 107.170.210.111:56384 #95 (2 connections now open)
+[36mmongo    |[0m 2018-11-16T16:34:36.030+0000 I NETWORK  [conn95] end connection 107.170.210.111:56384 (1 connection now open)
+[36mmongo    |[0m 2018-11-17T10:06:42.463+0000 I NETWORK  [listener] connection accepted from 107.170.212.95:55284 #96 (2 connections now open)
+[36mmongo    |[0m 2018-11-17T10:06:52.288+0000 I NETWORK  [conn96] end connection 107.170.212.95:55284 (1 connection now open)
+[36mmongo    |[0m 2018-11-17T10:27:24.184+0000 I NETWORK  [listener] connection accepted from 216.218.206.66:55826 #97 (2 connections now open)
+[36mmongo    |[0m 2018-11-17T10:27:24.631+0000 I NETWORK  [conn97] end connection 216.218.206.66:55826 (1 connection now open)
+[36mmongo    |[0m 2018-11-17T10:27:37.891+0000 I NETWORK  [listener] connection accepted from 216.218.206.66:14662 #98 (2 connections now open)
+[36mmongo    |[0m 2018-11-17T10:27:38.072+0000 I NETWORK  [conn98] end connection 216.218.206.66:14662 (1 connection now open)
+[36mmongo    |[0m 2018-11-17T11:19:50.206+0000 I NETWORK  [listener] connection accepted from 107.170.212.208:38274 #99 (2 connections now open)
+[36mmongo    |[0m 2018-11-17T11:20:00.036+0000 I NETWORK  [conn99] end connection 107.170.212.208:38274 (1 connection now open)
+[36mmongo    |[0m 2018-11-17T12:33:34.836+0000 I NETWORK  [listener] connection accepted from 107.170.211.196:34816 #100 (2 connections now open)
+[36mmongo    |[0m 2018-11-17T12:33:44.661+0000 I NETWORK  [conn100] end connection 107.170.211.196:34816 (1 connection now open)
+[36mmongo    |[0m 2018-11-17T13:47:04.478+0000 I NETWORK  [listener] connection accepted from 107.170.211.76:52188 #101 (2 connections now open)
+[36mmongo    |[0m 2018-11-17T13:47:14.302+0000 I NETWORK  [conn101] end connection 107.170.211.76:52188 (1 connection now open)
+[36mmongo    |[0m 2018-11-17T15:00:03.073+0000 I NETWORK  [listener] connection accepted from 107.170.211.127:35486 #102 (2 connections now open)
+[36mmongo    |[0m 2018-11-17T15:00:12.897+0000 I NETWORK  [conn102] end connection 107.170.211.127:35486 (1 connection now open)
+[36mmongo    |[0m 2018-11-18T05:42:18.911+0000 I NETWORK  [listener] connection accepted from 107.170.211.235:37708 #103 (2 connections now open)
+[36mmongo    |[0m 2018-11-18T05:42:28.741+0000 I NETWORK  [conn103] end connection 107.170.211.235:37708 (1 connection now open)
+[36mmongo    |[0m 2018-11-18T09:56:59.345+0000 I NETWORK  [listener] connection accepted from 184.105.247.196:22502 #104 (2 connections now open)
+[36mmongo    |[0m 2018-11-18T09:56:59.631+0000 I NETWORK  [conn104] end connection 184.105.247.196:22502 (1 connection now open)
+[36mmongo    |[0m 2018-11-18T09:57:12.002+0000 I NETWORK  [listener] connection accepted from 184.105.247.196:35410 #105 (2 connections now open)
+[36mmongo    |[0m 2018-11-18T09:57:12.184+0000 I NETWORK  [conn105] end connection 184.105.247.196:35410 (1 connection now open)
+[36mmongo    |[0m 2018-11-19T09:56:37.057+0000 I NETWORK  [listener] connection accepted from 184.105.247.196:40596 #106 (2 connections now open)
+[36mmongo    |[0m 2018-11-19T09:56:37.348+0000 I NETWORK  [conn106] end connection 184.105.247.196:40596 (1 connection now open)
+[36mmongo    |[0m 2018-11-19T09:56:49.951+0000 I NETWORK  [listener] connection accepted from 184.105.247.196:57480 #107 (2 connections now open)
+[36mmongo    |[0m 2018-11-19T09:56:50.132+0000 I NETWORK  [conn107] end connection 184.105.247.196:57480 (1 connection now open)
+[36mmongo    |[0m 2018-11-19T14:56:31.586+0000 I NETWORK  [listener] connection accepted from 107.170.211.25:48410 #108 (2 connections now open)
+[36mmongo    |[0m 2018-11-19T14:56:41.410+0000 I NETWORK  [conn108] end connection 107.170.211.25:48410 (1 connection now open)
+[36mmongo    |[0m 2018-11-19T16:11:40.789+0000 I NETWORK  [listener] connection accepted from 107.170.211.44:45478 #109 (2 connections now open)
+[36mmongo    |[0m 2018-11-19T16:11:50.614+0000 I NETWORK  [conn109] end connection 107.170.211.44:45478 (1 connection now open)
+[36mmongo    |[0m 2018-11-20T10:10:44.692+0000 I NETWORK  [listener] connection accepted from 74.82.47.5:22052 #110 (2 connections now open)
+[36mmongo    |[0m 2018-11-20T10:10:44.920+0000 I NETWORK  [conn110] end connection 74.82.47.5:22052 (1 connection now open)
+[36mmongo    |[0m 2018-11-20T10:10:56.779+0000 I NETWORK  [listener] connection accepted from 74.82.47.5:28924 #111 (2 connections now open)
+[36mmongo    |[0m 2018-11-20T10:10:56.961+0000 I NETWORK  [conn111] end connection 74.82.47.5:28924 (1 connection now open)
+[36mmongo    |[0m 2018-11-20T11:15:24.292+0000 I NETWORK  [listener] connection accepted from 196.52.43.128:52580 #112 (2 connections now open)
+[36mmongo    |[0m 2018-11-20T11:15:28.248+0000 I NETWORK  [conn112] end connection 196.52.43.128:52580 (1 connection now open)
+[36mmongo    |[0m 2018-11-20T11:38:37.805+0000 I NETWORK  [listener] connection accepted from 162.243.158.32:40660 #113 (2 connections now open)
+[36mmongo    |[0m 2018-11-20T11:38:47.642+0000 I NETWORK  [conn113] end connection 162.243.158.32:40660 (1 connection now open)
+[36mmongo    |[0m 2018-11-20T12:55:48.840+0000 I NETWORK  [listener] connection accepted from 162.243.158.61:52586 #114 (2 connections now open)
+[36mmongo    |[0m 2018-11-20T12:55:58.672+0000 I NETWORK  [conn114] end connection 162.243.158.61:52586 (1 connection now open)
+[36mmongo    |[0m 2018-11-20T14:12:03.850+0000 I NETWORK  [listener] connection accepted from 162.243.158.58:37998 #115 (2 connections now open)
+[36mmongo    |[0m 2018-11-20T14:12:13.670+0000 I NETWORK  [conn115] end connection 162.243.158.58:37998 (1 connection now open)
+[36mmongo    |[0m 2018-11-20T15:29:27.824+0000 I NETWORK  [listener] connection accepted from 162.243.158.10:51366 #116 (2 connections now open)
+[36mmongo    |[0m 2018-11-20T15:29:37.667+0000 I NETWORK  [conn116] end connection 162.243.158.10:51366 (1 connection now open)
+[36mmongo    |[0m 2018-11-21T06:22:00.830+0000 I NETWORK  [listener] connection accepted from 107.170.216.78:42178 #117 (2 connections now open)
+[36mmongo    |[0m 2018-11-21T06:22:10.658+0000 I NETWORK  [conn117] end connection 107.170.216.78:42178 (1 connection now open)
+[36mmongo    |[0m 2018-11-21T07:53:09.624+0000 I NETWORK  [listener] connection accepted from 122.228.19.80:58191 #118 (2 connections now open)
+[36mmongo    |[0m 2018-11-21T07:53:10.006+0000 I NETWORK  [conn118] end connection 122.228.19.80:58191 (1 connection now open)
+[36mmongo    |[0m 2018-11-21T10:06:55.033+0000 I NETWORK  [listener] connection accepted from 184.105.247.196:44976 #119 (2 connections now open)
+[36mmongo    |[0m 2018-11-21T10:06:55.251+0000 I NETWORK  [conn119] end connection 184.105.247.196:44976 (1 connection now open)
+[36mmongo    |[0m 2018-11-21T10:07:07.448+0000 I NETWORK  [listener] connection accepted from 184.105.247.196:52492 #120 (2 connections now open)
+[36mmongo    |[0m 2018-11-21T10:07:07.630+0000 I NETWORK  [conn120] end connection 184.105.247.196:52492 (1 connection now open)
+[36mmongo    |[0m 2018-11-21T10:56:57.451+0000 I NETWORK  [listener] connection accepted from 36.110.211.67:45980 #121 (2 connections now open)
+[36mmongo    |[0m 2018-11-21T10:56:57.454+0000 I NETWORK  [conn121] received client metadata from 36.110.211.67:45980 conn121: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "CentOS Linux 7.3.1611 Core", architecture: "x86_64", version: "3.10.0-514.el7.x86_64" }, platform: "CPython 2.7.5.final.0" }
+[36mmongo    |[0m 2018-11-21T10:56:58.118+0000 I NETWORK  [listener] connection accepted from 36.110.211.3:58411 #122 (3 connections now open)
+[36mmongo    |[0m 2018-11-21T10:56:58.121+0000 I NETWORK  [conn122] received client metadata from 36.110.211.3:58411 conn122: { driver: { name: "PyMongo", version: "3.4.0" }, os: { type: "Linux", name: "CentOS Linux 7.3.1611 Core", architecture: "x86_64", version: "3.10.0-514.el7.x86_64" }, platform: "CPython 2.7.5.final.0" }
+[36mmongo    |[0m 2018-11-21T10:57:01.415+0000 I NETWORK  [conn121] end connection 36.110.211.67:45980 (2 connections now open)
+[36mmongo    |[0m 2018-11-21T10:57:01.419+0000 I NETWORK  [conn122] end connection 36.110.211.3:58411 (1 connection now open)
+[36mmongo    |[0m 2018-11-21T11:47:34.664+0000 I NETWORK  [listener] connection accepted from 107.170.234.130:57866 #123 (2 connections now open)
+[36mmongo    |[0m 2018-11-21T11:47:44.489+0000 I NETWORK  [conn123] end connection 107.170.234.130:57866 (1 connection now open)
+[36mmongo    |[0m 2018-11-21T13:06:06.810+0000 I NETWORK  [listener] connection accepted from 107.170.216.123:37212 #124 (2 connections now open)
+[36mmongo    |[0m 2018-11-21T13:06:16.634+0000 I NETWORK  [conn124] end connection 107.170.216.123:37212 (1 connection now open)
